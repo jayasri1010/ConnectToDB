@@ -1,0 +1,43 @@
+﻿@model IEnumerable< Logindetails.Models.UserDetails>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <td>Fname</td>
+            <td>Lname</td>
+            <td>Mname</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Address1</td>
+            <td>Address2</td>
+            <td>State</td>
+            <td>Zipcode</td>
+            <td>password</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>@obj.Fname</td>
+                <td>@obj.Lname</td>
+                <td>@obj.Mname</td>
+                <td>@obj.Email</td>
+                <td>@obj.Phone</td>
+                <td>@obj.Address1State</td>
+                <td>@obj.Address2</td>
+                <td>@obj.State</td>
+                <td>@obj.Zipcode</td>
+                <td>@obj.password</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
